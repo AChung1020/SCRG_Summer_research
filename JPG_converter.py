@@ -28,4 +28,4 @@ def convert_png_to_jpg(directory_path):
     print("Conversion complete.")
 
 # Example usage:
-convert_png_to_jpg(r"C:\Users\andre\OneDrive\Desktop\SCRG\Renamed_Images_sub1_thermal")
+convert_png_to_jpg(r"C:\Users\andre\OneDrive\Desktop\SCRG\thermal")
