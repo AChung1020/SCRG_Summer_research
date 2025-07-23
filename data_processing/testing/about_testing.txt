@@ -1,0 +1,34 @@
+Image Processing and Metadata Extraction Scripts
+This collection of Python scripts is designed to process thermal images, extract metadata, and manage file information for a research project. Below is a brief description of each script:
+1. Thermal Image Analysis
+This script analyzes thermal images, specifically focusing on white pixel areas. It performs the following tasks:
+
+Extracts coordinates of white pixels from a specified image
+Reads temperature data from a corresponding CSV file
+Calculates statistics (min, max, standard deviation, median) for temperatures in white pixel areas
+Outputs the results, including the number of white pixels and temperature statistics
+
+2. Cupping Image Copying and Renaming
+This script is designed to copy and rename specific thermal images related to cupping:
+
+Walks through a source directory to find thermal images matching a specific pattern
+Copies matching images to a destination directory
+Renames the copied images based on a predefined format
+Excludes images with 'Base' or 'Cool' in their filenames
+
+3. Metadata Extraction
+This script extracts metadata from image files and saves it to a CSV file:
+
+Uses ExifTool to extract all available metadata from a specified image file
+Writes the extracted metadata to a CSV file, with each row containing a metadata tag and its value
+Handles potential errors during metadata extraction and CSV writing
+
+4. Duplicate Filename Removal
+This script processes a CSV file containing filenames and removes duplicates:
+
+Reads filenames from an input CSV file
+Identifies and retains only unique filenames
+Writes the unique filenames to a new CSV file
+Useful for cleaning up file lists and ensuring uniqueness in datasets
+
+These scripts are part of a larger image processing and analysis workflow, likely for a research project involving thermal imaging and cupping techniques. They demonstrate various file handling, image processing, and data management tasks using Python.

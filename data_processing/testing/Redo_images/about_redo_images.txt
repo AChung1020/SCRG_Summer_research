@@ -1,0 +1,55 @@
+# About HIP Project Scripts
+
+This document describes four Python scripts used for managing and processing data in the HIP (Heat Illness Prevention) Project.
+
+## Script 1: Directory Comparison and File Deletion
+
+**Filename**: directory_comparison.py
+
+**Purpose**: This script compares two directories and deletes files in the first directory that don't have corresponding files in the second directory, ignoring certain file suffixes.
+
+**Key Features**:
+- Compares files between two directories, ignoring specified suffixes
+- Deletes unique files from the first directory
+- Provides a summary of actions taken
+- Includes a user confirmation step before deletion
+
+## Script 2: Image Selection and Copying
+
+**Filename**: copy_matching_images.py
+
+**Purpose**: This script reads a CSV file, searches for corresponding image files in a source directory, and copies them to a destination directory.
+
+**Key Features**:
+- Reads filenames from a CSV file
+- Searches for matching image files in a source directory and its subdirectories
+- Copies matching files to a destination directory
+- Handles file naming with suffixes (e.g., "_thermal")
+- Provides a detailed summary including duplicates and missing files
+
+## Script 3: Image Organization by HIP Number
+
+**Filename**: organize_hip_images.py
+
+**Purpose**: This script organizes image files into subdirectories based on their HIP number (e.g., HIP_01, HIP_02, etc.).
+
+**Key Features**:
+- Uses regular expressions to identify HIP numbers in filenames
+- Creates subdirectories for each unique HIP number
+- Moves files into appropriate subdirectories
+- Provides a summary of actions taken, including file counts per subdirectory
+
+## Script 4: Directory Synchronization
+
+**Filename**: sync_directories.py
+
+**Purpose**: This script synchronizes files between two directories, replacing files in the original directory with those from a "redo" directory.
+
+**Key Features**:
+- Walks through a "redo" directory and its subdirectories
+- Creates corresponding directory structure in the original directory if it doesn't exist
+- Replaces files in the original directory with those from the "redo" directory
+- Skips .DS_Store files
+- Provides error handling and logging
+
+These scripts are designed to work together to manage, organize, and process image files for the HIP Project, ensuring data consistency and proper file organization.

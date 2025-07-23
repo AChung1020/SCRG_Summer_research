@@ -1,0 +1,23 @@
+I will now go over the files in this folder:
+
+ROI_draw.py:
+    THERMAL_BASE_DIR = the path to the thermal images
+    VISIBLE_BASE_DIR = the path tot the optical images
+
+The way the ROI_draw works is that it will first show the iamge of the thermal. For the circle you wish to choose as you ROI, follow
+the edge of the circle and click at least 5 points for that circle uing left click. Once you have enough points, you can click right-click
+and you will see it automatically estimate the circle. From here, you can click y or n on the keyboard. click y if satisfied, click n if not.
+
+It will then pop up with a thermal image and highlight the same ROI you drew on the thermal. again, click y if satisfied, n if not.
+
+To exit the program, get to the thermal image, then go to terminal, click on it, then do control + c. then when you click n, it will 
+exit the program.
+
+temperature_data:
+
+REGIONOFINTEREST_ROOT_DIR = The ROI Image folder you get from ROI_draw
+TEMPERATURE_ROOT_DIR = Where your temeprature_csv folder is located
+
+
+
+Andrew Chung 08/21/24

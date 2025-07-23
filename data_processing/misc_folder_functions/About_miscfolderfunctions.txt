@@ -1,0 +1,41 @@
+This small package is able to set a working directory for the functions that were written in data processing.
+
+How it works is that it will simply find the folder with the name SCRG. This can be changed in the script,
+but since SCRG notably contains the projects even outside of HIP_Project, It should be fine.
+
+This should work for windows and MAC. This allows us to simply change the folder or file names as we please
+in the scripts that are in this github repository, rather than copying and pasting entire lines of directory paths.
+
+It is to be noted that the results of the scripts will ALWAYS GO TO THE OUTER FOLDER "RESULTS_from_python_scripts"
+
+DO NOT DELETE THIS FOLDER EVEN WHEN EMPTY!!!
+
+You can change the location, again as you please in each of the individual scripts.
+
+IT IS TO BE NOTED THAT THIS EXPECTS YOU TO HAVE MADE A SHORTCUT TO THE WORKING DIRECTORY SCRG THROUGH ONEDRIVE ON YOUR
+DEVICE. THIS IS NOT A DOWNLOAD, THIS IS THE ONEDRIVE SHORTCUT OPTION!!! THIS ALLOWS YOU CHANGES TO BE DIRECTLY SYNCED TO
+THE CLOUD SHAREPOINT DRIVE!!!
+
+    For more information on the syncing:
+    Windows: https://support.microsoft.com/en-us/office/sync-files-with-onedrive-in-windows-615391c4-2bd3-4aae-a42a-858262e42a49
+    Mac: https://support.microsoft.com/en-us/office/sync-files-with-onedrive-on-macos-d11b9f29-00bb-4172-be39-997da46f913f 
+
+To show an example of what the path looks like, look here:
+
+os.path.join(get_sharepoint_path(), "HIP_Project", "SubjData", "Phase 1")
+
+This is equivalent to ../(UserPath found by get_sharepoint_path(includes working directory SCRG in this case))/HIP_Project/SubjData/Phase 1
+
+If the script requires not a directory path but for example a csv for something like the metadata extraction, the last path would
+not be a directory like "Phase 1" but would be a file like "metadata_extraction.csv"
+
+ALL THE CHANGEABLE PATHS ARE IN CAPITAL LETTERS NEAR THE TOP OF EACH SCRIPT. It is recommended to make your own brnach
+of the master so you do not need to push the changes you made and can work in your own directory, but not too important for function
+
+This makes it easier to change in the scripts.
+
+IF YOU WANT TO CHANGE THE SHORTCUT FOLDER, go to get_base_filepath.py and change line 19 variable called "folder_name"
+to whatever shortcut you want to use.
+
+
+Andrew Chung 08/21/24

@@ -1,0 +1,46 @@
+Throughout the summer, this is what was completed:
+
+1. Data extraction -> was able to successfully extract thermal and optical images into separate files utilizing the flyr package.
+2. Metadata extraction -> was able to extract metadata that may be useful in future endeavors. Also extracted pixel temperature values.
+3. semi-automatic alignment -> was able to create a semi automatic algorithm that aligns the optical image to
+the thermal image using cv2 affine transformation functions.
+4. ROI mask -> was able to draw ROI mask on optical image and see it on thermal image. Created binary mask that helps define ROI for temperature
+values. 
+5. temperature data -> utilized the ROI mask to find the min temp, max temp, std, and number of pixels inside the mask
+
+
+Future direction:
+- Change in time(extracting time data) -> currently metadata times are completely inaccurate. There may be a way to correlate the time differentials
+found in the metadata and the times written in the excel sheets by Katie. (will most likely have to edit the metadata python file)
+
+- Automatic alignment -> over the summer, there wassimply no way to automatically align the images
+through a ML algorithm or cv2 functions. The image quality was not usable a lot of the time.
+    - tried to use canny/sobel edge detection algorithms, downscaling, and the medium article found here: https://medium.com/@aswinvb/how-to-perform-thermal-to-visible-image-registration-c18a34894866
+    - I also tried using the medium article function, averaging out the values, and seeing if offsets could be corrected through
+    averaging but that was also a failed attempt, especially with different variables like different camera people or different conditions.
+    
+- Automatic ROI finder -> in the future, if the circles are more defined and the circles are clearly
+labeled on images, this may be viable and would increase the efficiency of the process. Currently, There
+are setbacks in terms of image quality and the circle not being there at all.
+
+
+- Concentric circles and control circles -> after finding the ROI above, we need to be able to get temperature
+data for a control circle. This circle will most likely be to the right of the original circle. Bare in mind,
+that this may not work; since the circle may hover over areas that are not on the patients body or get covered by clothes.
+For the concentric circles, we want to get a certain ratio of circle that is bigger and smaller than the original
+ROI mask and find the different values that we had found before such as min/max temp, std.
+
+
+Currently, the files are being directly connected through sharepoint. So make sure that if you want
+to use any of this code, you have onedrive synce and made a shortcut for the folder called: SCRG
+After that, there should not be any problems using the code. For each file, remember that the base directory
+is always going to be SCRG. You can change the file path as you like and an example of how the code structures
+file path can be found in About_miscfolderfunction.txt in the misc_folder_functions folder.
+
+For package information and what the files do, I suggest looking at About_data_processing.txt first, and then the individual 
+about folders in each of the subdirectories.
+
+I learned a lot during the summer, and I hope that you are able to improve upon the code and 
+bring further progress to the research work! Have fun!
+
+Andrew Chung 08/23/24

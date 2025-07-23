@@ -1,0 +1,58 @@
+I will now describe the file structure of the data_processing folder:
+
+    alignment:
+        semi_automatic_alignment.py --> Aligning the thermal and optical images --> useful output is cropped optical images
+
+    data_extraction:
+        metadata_extraction.py -> extracts all metadata for the original FLIR images. CAN ONLY USE ORIGINAL FLIR IMAGES NOT SPLIT IMAGES
+        png_to_jpg_converter.py -> converts thermal png to jpg. NEED JPG TO USE ALIGNMENT ALGORITHM
+        split_thermal_optical.py -> Splits the original flir images into thermal and optical images. thermal returns PNG and optical jpg.
+        temperature_csv.py -> returns a csv of the same dimension as the thermal image w/ pixel temperature values
+
+    data_processing_failed_automation
+        all failed attempts at automatically aligning the images
+
+    misc_folder_functions:
+        get_base_filepath.py -> script that helps find the working directory of the onedrive folder
+        __init__.py --> EMPTY BUT DO NOT DELETE
+        Do not delete __pycache__
+
+    ROI:
+        ROI_draw.py -> allows use to draw the region of interest and saves binary mask
+        temperature_data.py -> gets the temperature data based on ROI such as min and max temp
+
+    testing:
+        all_metadata.py -> for a single image, retrieves all metadata possible with exiftool
+        Only_cupping_images.py -> returns only cupping images(in this case combo number 6)
+        single_temp_data.py -> testing temperature data
+
+In general, the access of folders will most likely be the following:
+data_extraction -> alignment -> ROI
+
+In terms of files:
+split_thermal_optical -> png_to_jpg_converter -> temperature_csv and metadata_extraction -> 
+semi_automatic_alignment -> ROI_draw -> temperature_data
+
+In terms of python packages you need to install:
+
+flyr:
+
+commandline: pip install flyr 
+documentation: https://pypi.org/project/flyr/
+
+exiftool:
+commandline: pip install PyExifTool
+documentation: https://pypi.org/project/PyExifTool/
+
+you also need to download the original exiftool:
+https://exiftool.org/
+
+cv2:
+commandline: pip install opencv-python
+documentation: https://opencv.org/get-started/
+
+pillow:
+commandline: pip install pillow
+documentation: https://pillow.readthedocs.io/en/stable/
+
+Andrew Chung 08/21/24

@@ -1,0 +1,25 @@
+I will now describe what paths, files, and not obvious functions are necessary for each of the script:
+
+metadata_extraction:
+
+BASE_DIRECTORY = path to the original flir images, can be renamed but these are the NOT SPLIT IMAGES
+OUTPUT_CSV_PATH = where the metadadata extracted will go. name of file is the last string. must have .csv extension at the end.
+CODE_VERSION = set to whichever code version you please.
+
+png_to_jpg_converter:
+
+THERMAL_IMAGE_DIR = The thermal iamge directory after you split with split_thermal_optical.py
+
+split_thermal_optical:
+
+ORIGNAL_FLIR_IMAGE_DIR = path to the original flir images, can be renamed but these are the NOT SPLIT IMAGES
+OPTICAL_FOLDER_DESTINATION = where the optical images should go
+THERMAL_FOLDER_DESTINATION =  where the thermal images should go
+
+temperature_csv:
+
+ORIGINAL_FLIR_IMAGES_DIR = path to the original flir images, can be renamed but these are the NOT SPLIT IMAGES
+TEMPERATURE_CSV_DIR = the directory to which the temperature csv files should go
+
+No notable functions for these scripts. they can all simply be run in vscode with the play button on the top right corner,
+or through python <script name>.py

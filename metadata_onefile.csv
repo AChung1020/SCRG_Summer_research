@@ -1,0 +1,141 @@
+Tag,Value
+SourceFile,/Users/andrewchung/Desktop/PythonCode/Phase 1/HIP_01/Renamed Images/HIP_01_ProOne_1_Cool.jpg
+ExifTool:ExifToolVersion,12.85
+ExifTool:Warning,[minor] Possibly incorrect maker notes offsets (fix by -42?)
+File:FileName,HIP_01_ProOne_1_Cool.jpg
+File:Directory,/Users/andrewchung/Desktop/PythonCode/Phase 1/HIP_01/Renamed Images
+File:FileSize,1551135
+File:FileModifyDate,2024:08:12 14:52:00-04:00
+File:FileAccessDate,2024:08:13 00:58:16-04:00
+File:FileInodeChangeDate,2024:08:12 11:54:39-04:00
+File:FilePermissions,100664
+File:FileType,JPEG
+File:FileTypeExtension,JPG
+File:MIMEType,image/jpeg
+File:ExifByteOrder,MM
+File:ImageWidth,640
+File:ImageHeight,480
+File:EncodingProcess,0
+File:BitsPerSample,8
+File:ColorComponents,3
+File:YCbCrSubSampling,2 2
+JFIF:JFIFVersion,1 1
+JFIF:ResolutionUnit,1
+JFIF:XResolution,72
+JFIF:YResolution,72
+EXIF:ImageDescription,
+EXIF:Make,FLIR Systems AB
+EXIF:Model,
+EXIF:Orientation,1
+EXIF:XResolution,72
+EXIF:YResolution,72
+EXIF:ResolutionUnit,2
+EXIF:Software,Flir Cronos
+EXIF:ModifyDate,2024:03:29 11:28:48
+EXIF:YCbCrPositioning,1
+EXIF:ExposureTime,undef
+EXIF:ExifVersion,0220
+EXIF:DateTimeOriginal,2024:03:26 15:04:04
+EXIF:CreateDate,2024:03:26 15:04:04
+EXIF:ComponentsConfiguration,1 2 3 0
+EXIF:SubjectDistance,1
+EXIF:FocalLength,0
+EXIF:FlashpixVersion,0100
+EXIF:ColorSpace,1
+EXIF:ExifImageWidth,120
+EXIF:ExifImageHeight,90
+EXIF:DigitalZoomRatio,1
+EXIF:ImageUniqueID,e6751b9aa7604e2dbb4f40e18ea6d6ac
+EXIF:OffsetSchema,0
+EXIF:GPSImgDirection,0
+MakerNotes:ImageTemperatureMax,92842.75
+MakerNotes:ImageTemperatureMin,0.2492697176
+MakerNotes:Emissivity,undef
+APP1:CreatorSoftware,MTX IR
+APP1:RawThermalImageWidth,640
+APP1:RawThermalImageHeight,480
+APP1:RawThermalImageType,TIFF
+APP1:RawThermalImage,"(Binary data 614604 bytes, use -b option to extract)"
+APP1:Emissivity,0.949999988079071
+APP1:ObjectDistance,1
+APP1:ReflectedApparentTemperature,21.9999938964844
+APP1:AtmosphericTemperature,19.9999938964844
+APP1:IRWindowTemperature,24.9999938964844
+APP1:IRWindowTransmission,1
+APP1:RelativeHumidity,0.5
+APP1:PlanckR1,18640.5
+APP1:PlanckB,1435
+APP1:PlanckF,1
+APP1:AtmosphericTransAlpha1,0.00656899996101856
+APP1:AtmosphericTransAlpha2,0.0126200001686811
+APP1:AtmosphericTransBeta1,-0.00227600010111928
+APP1:AtmosphericTransBeta2,-0.00667699985206127
+APP1:AtmosphericTransX,1.89999997615814
+APP1:CameraTemperatureRangeMax,119.999993896484
+APP1:CameraTemperatureRangeMin,-40.0000061035156
+APP1:CameraTemperatureMaxClip,149.999993896484
+APP1:CameraTemperatureMinClip,-60.0000061035156
+APP1:CameraTemperatureMaxWarn,119.999993896484
+APP1:CameraTemperatureMinWarn,-40.0000061035156
+APP1:CameraTemperatureMaxSaturated,149.999993896484
+APP1:CameraTemperatureMinSaturated,-60.0000061035156
+APP1:CameraModel,FLIR ONE Pro (gen 3)
+APP1:CameraPartNumber,
+APP1:CameraSerialNumber,T06M3T000DC
+APP1:CameraSoftware,
+APP1:LensModel,
+APP1:LensPartNumber,
+APP1:LensSerialNumber,No Lens
+APP1:FieldOfView,0
+APP1:FilterModel,
+APP1:FilterPartNumber,
+APP1:FilterSerialNumber,
+APP1:PlanckO,-2090
+APP1:PlanckR2,0.0125000001862645
+APP1:RawValueRangeMin,4
+APP1:RawValueRangeMax,65535
+APP1:RawValueMedian,14776
+APP1:RawValueRange,1880
+APP1:DateTimeOriginal,2024:03:26 15:04:04.720-04:00
+APP1:FocusStepCount,0
+APP1:FocusDistance,2
+APP1:FrameRate,9
+APP1:PaletteColors,224
+APP1:AboveColor,169 128 128
+APP1:BelowColor,49 128 128
+APP1:OverflowColor,67 215 98
+APP1:UnderflowColor,40 109 239
+APP1:Isotherm1Color,99 128 128
+APP1:Isotherm2Color,92 115 209
+APP1:PaletteMethod,0
+APP1:PaletteStretch,1
+APP1:PaletteName,iron
+APP1:Palette,"(Binary data 672 bytes, use -b option to extract)"
+APP1:Meas1Type,3
+APP1:Meas1Params,349 266 400 266 349 233
+APP1:Meas1Label,El1
+APP1:Meas2Type,3
+APP1:Meas2Params,441 266 467 266 441 249
+APP1:Meas2Label,El2
+APP1:Meas3Type,3
+APP1:Meas3Params,349 318 375 318 349 301
+APP1:Meas3Label,El3
+APP1:Real2IR,1.25598692893982
+APP1:OffsetX,-48
+APP1:OffsetY,7
+APP1:PiPX1,160
+APP1:PiPX2,479
+APP1:PiPY1,120
+APP1:PiPY2,359
+APP1:EmbeddedImageWidth,1440
+APP1:EmbeddedImageHeight,1080
+APP1:EmbeddedImageType,JPG
+APP1:EmbeddedImage,"(Binary data 254683 bytes, use -b option to extract)"
+APP1:GPSValid,0
+APP1:GPSImgDirectionRef,M
+APP1:GPSImgDirection,0
+Composite:ImageSize,640 480
+Composite:Megapixels,0.3072
+Composite:ShutterSpeed,undef
+Composite:PeakSpectralSensitivity,10.0262379790941
+Composite:FocalLength35efl,0
